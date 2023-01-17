@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(images/pexels-sam-kolder-2387877.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom:50px;
+}
+
+section nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+
+.header-content {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    width: 80%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    align-items: stretch;
+}
+
+.header-title {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.header-img {
+    width: 300px;
+    height: 300px;
+    opacity: 80%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.btn-quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.odins-logo {
+    width: 200px;
+    filter: drop-shadow(1px 1px 10px rgb(119, 119, 119));
+}
+
+.odins-logo:hover {
+    filter: drop-shadow(1px 1px 3px rgb(223, 147, 48));
+}
+
