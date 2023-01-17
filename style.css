@@ -14,21 +14,23 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Acme', sans-serif;
-    
+    background-image: url(images/pexels-sam-kolder-2387877.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 
 /* header */
 
 header {
-    background-image: url(images/pexels-sam-kolder-2387877.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    margin-bottom: 20px;
 }
 
 .nav-bar {
@@ -128,6 +130,7 @@ p {
     .header-img {
         width: 70%;
     }
+
 }
 
 /* body content */
@@ -140,17 +143,20 @@ p {
 }
 
 h2 {
-    margin-top: 20px;
     margin-bottom: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.8);
+
+    width: 60%;
 }
 
 /* carousel */
 
 .carousel {
-    position: relative;
-    padding: 0px;
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
 }
 
 .arrow-left,
@@ -193,7 +199,8 @@ h2 {
 
 .planets-wrapper {
     overflow-x: auto;
-    border: 5px solid black;
+    overflow: scroll;
+    border: 5px solid rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     padding: 10px 0;
     -ms-overflow-style: none;
@@ -222,6 +229,14 @@ h2 {
 .current-item {
     opacity: 1;
     
+}
+
+@media (max-width: 800px) {
+
+    .carousel {
+        max-width: 95%;
+        padding: 0 20px;
+    }
 }
 
 /* footer */
