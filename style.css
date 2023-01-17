@@ -13,15 +13,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(images/pexels-sam-kolder-2387877.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
+    font-family: 'Acme', sans-serif;
+    
 }
 
 
 /* header */
 
 header {
+    background-image: url(images/pexels-sam-kolder-2387877.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     padding: 30px 30px;
@@ -57,6 +59,7 @@ header nav a:hover{
     align-self: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 
     width: 80%;
@@ -67,6 +70,7 @@ header nav a:hover{
     flex-direction: column;
     max-width: 450px;
     align-items: stretch;
+    filter: drop-shadow(0px 0px 5px black);
 }
 
 .header-title {
@@ -83,10 +87,10 @@ p {
 
 .header-img {
     width: 300px;
-    height: 300px;
+    height:max-content;
     opacity: 80%;
     border-radius: 50px;
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 30px whitesmoke;
 }
 
 .btn-quote {
@@ -97,6 +101,128 @@ p {
 }
 
 
+@media (max-width: 1040px) {
+
+    p {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .header-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header-content {
+        flex-direction: column-reverse;
+    }
+
+    .header-img {
+        width: 70%;
+    }
+}
+
+/* body content */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* carousel */
+
+.carousel {
+    position: relative;
+    padding: 0px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 50px;
+    width: 5%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    color: rgb(104, 103, 103);
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    z-index: 1;
+}
+
+.arrow-left:focus,
+.arrow-right:focus {
+    outline: none;
+}
+
+.arrow-left:hover{
+    color: whitesmoke;
+    background: linear-gradient(to left, transparent 0%, black 100%);
+}
+
+.arrow-right:hover {
+    color: whitesmoke;
+    background: linear-gradient(to right, transparent 0%, black 100%);
+}
+
+.arrow-right {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.planets-wrapper {
+    overflow-x: auto;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 10px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.planets-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.planets {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+
+.current-item {
+    opacity: 1;
+    
+}
 
 /* footer */
 
