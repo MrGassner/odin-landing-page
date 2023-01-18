@@ -30,7 +30,7 @@ header {
     padding: 30px 30px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .nav-bar {
@@ -135,7 +135,7 @@ p {
 
 /* body content */
 
-.container {
+.container-carousel {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -148,7 +148,7 @@ h2 {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.8);
 
-    width: 60%;
+    width: 40%;
 }
 
 /* carousel */
@@ -237,7 +237,38 @@ h2 {
         max-width: 95%;
         padding: 0 20px;
     }
+
+    h2 {
+        width: 80%;
+    }
 }
+
+/* quote */
+
+.container-quotes,
+.cta {
+    background-color: rgba(0, 0, 0, 0.8);
+    align-self: center;
+    max-width: 800px;
+    padding: 20px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.container-quotes p,
+.cta a {
+    color: white;
+    max-width: 700px;
+}
+
+
+/* cta */
+
+
+
 
 /* footer */
 

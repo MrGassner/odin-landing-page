@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.arrow-right').addEventListener('click', () => move_scroll('right'));
     window.onload = planets_view
     window.addEventListener('resize', planets_view);
-
 })
+
 
 let currentItem = 2;
 const items = document.getElementsByClassName('item');
