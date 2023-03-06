@@ -1,4 +1,4 @@
-# odin-landing-page
+# The Odin Project: Landing Page
 
 This is the second page from the Odin's project. The objective was to make a page utilizing a given design.
 I decided to do it based on the space because there are a lot of cool pictures about it
